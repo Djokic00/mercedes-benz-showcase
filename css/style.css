@@ -1,0 +1,426 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 4.8rem;
+    background-color: #000;
+}
+
+.main-logo {
+    height: 9.8rem;
+}
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    color: #bbb;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 2.4rem;
+}
+
+.main-nav-link:hover {
+    color: #fff;
+}
+
+/*********************/
+/* HERO SECTION */
+/*********************/
+
+.section-hero {
+    min-height: 100vh;
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    padding: 10vh 10rem 0;
+}
+
+.hero-text {
+    max-width: 70rem;
+    padding: 9.6rem 2.4rem;
+    color: #fff;
+}
+
+.hero-description {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 4.8rem;
+}
+
+/*********************/
+/* MODELS SECTION */
+/*********************/
+
+.section-models {
+    padding: 9.6rem 0;
+}
+
+.model-text {
+    padding: 0 5.2rem;
+}
+
+.vehicle-types {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto 6.4rem auto;
+    border: 1px solid #ddd;
+    border-radius: 5rem;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.vehicle-type {
+    padding: 1.2rem 3.2rem;
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+    white-space: nowrap;
+    transition: all 0.2s;
+    color: #666;
+}
+
+.vehicle-type:first-child {
+    border-radius: 5rem 0 0 5rem;
+}
+
+.vehicle-type:last-child {
+    border-right: none;
+    border-radius: 0 5rem 5rem 0;
+}
+
+.vehicle-type:hover,
+.vehicle-type--active {
+    background: #333;
+    color: #fff;
+}
+
+.vehicle-type:hover,
+.vehicle-type--active {
+    border-right-color: transparent; /* Sakrij desni border */
+}
+
+.model-content {
+    padding: 0 5.2rem 3.2rem 5.2rem;
+}
+
+.model {
+    display: block;
+    text-align: center;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.model:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+
+.model-img {
+    display: block;
+    max-width: 100%;
+    filter: brightness(1.2);
+}
+
+.model-info {
+    padding: 3.2rem 4.8rem 2.4rem 4.8rem;
+}
+
+.model-title {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+}
+
+.model-price {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.model-link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #278cff;
+}
+
+.test-drive-btn {
+    display: inline-block;
+    margin: 1.2rem auto;
+    background: #fff;
+    color: #666;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.2rem 2.4rem;
+    border: 2px solid #ddd;
+    border-radius: 2rem;
+    text-decoration: none;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.model:hover .test-drive-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-0.4rem);;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 3.2rem 0 4.8rem 0;
+}
+
+.dot {
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: #999;
+    border: 2px solid #999;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot--fill {
+    background: #333;
+    border-color: #333;
+}
+
+/*********************/
+/* OLD TIMERS SECTION */
+/*********************/
+
+.section-old-timers {
+    padding: 9.6rem 0;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+
+.old-timers-text {
+    padding: 0 5.2rem;
+}
+
+.old-timers-text p {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.old-timers-stats {
+    display: flex;
+    gap: 4.8rem;
+    margin-top: 8rem;
+}
+
+.old-timers-stat-item h3 {
+    font-size: 3.6rem;
+    margin-bottom: 0.7rem;
+}
+
+.old-timers-stat-item p {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+.old-timers-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 2.4rem;
+}
+
+.old-timers-gallery-item {
+    overflow: hidden;
+}
+
+.old-timers-gallery img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.old-timers-gallery-item img:hover {
+    transform: scale(1.2);
+}
+
+/*********************/
+/* CTA SECTION */
+/*********************/
+
+.section-cta {
+    background: #f7f7f7;
+    padding: 9.6rem 0;
+}
+
+.section-cta .container {
+    padding: 6.8rem 3.4rem;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: minmax(28rem, 2fr) 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    background: linear-gradient(
+            to right bottom,
+            #777,
+            #555
+    );
+    overflow: hidden;
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem 4.8rem 6.4rem;
+    color: #fff;
+}
+
+.cta .heading-secondary {
+    margin-bottom: 3.2rem;
+}
+
+.cta .cta-text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #777;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+    color: #aaa;
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.cta-img-box {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.65)
+    ), url("../assets/sign-up-4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta .btn-full {
+    background-color: #333;
+    color: #fff;
+}
+
+/*********************/
+/* FOOTER SECTION */
+/*********************/
+
+.section-footer {
+    padding: 9.6rem 0;
+    background-color: #000;
+    color: #bbb
+}
+
+.footer .container {
+    max-width: 80rem;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1fr 1fr
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-logo {
+    display: block;
+}
+
+.logo {
+    height: 9.6rem;
+    width: auto;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: currentColor;
+}
+
+.copyright {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: inherit;
+    margin-top: auto;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    color: inherit;
+    margin-bottom: 3.2rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: inherit;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #fff;
+}
+
