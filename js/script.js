@@ -28,11 +28,14 @@ document.addEventListener('click', (e) => {
 // Changing active tabs
 const tabs = document.querySelector('.vehicle-types')
 tabs.addEventListener('click', e => {
-  e.preventDefault()
-  const clicked = e.target
-  console.log('clicked', clicked)
-  if (clicked.classList.contains('vehicle-type')) {
-    document.querySelector('.vehicle-type--active').classList.remove('vehicle-type--active')
-    clicked.classList.add('vehicle-type--active')
+  const clicked = e.target.closest('.vehicle-type')
+  if (!clicked) return
+
+  const activeTab = tabs.querySelector('.vehicle-type--active')
+
+  if (activeTab) {
+    activeTab.classList.remove('vehicle-type--active')
   }
+
+  clicked.classList.add('vehicle-type--active')
 })
