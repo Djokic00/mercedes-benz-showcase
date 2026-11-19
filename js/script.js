@@ -4,29 +4,25 @@ const currentYear = new Date().getFullYear()
 yearEl.textContent = currentYear
 
 // Smooth scrolling animation
-const allLinks = document.querySelectorAll('a[href]')
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a[href^="#"]')
 
-allLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    const href = link.getAttribute('href')
+  if (!link) return
 
-    if (!href || !href.startsWith('#')) return
+  const href = link.getAttribute('href')
 
+  if (href === '#') {
     e.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
 
-    if (href === '#') {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      })
-      return
-    }
+  const section = document.getElementById(href.slice(1))
 
-    const sectionEl = document.querySelector(href)
-    if (!sectionEl) return
+  if (!section) return
 
-    sectionEl.scrollIntoView({ behavior: 'smooth' })
-  })
+  e.preventDefault()
+  section.scrollIntoView({ behavior: 'smooth' })
 })
 
 // Changing active tabs
