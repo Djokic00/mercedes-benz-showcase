@@ -124,6 +124,10 @@
     padding: 0 5.2rem 3.2rem 5.2rem;
 }
 
+.model-panel[hidden] {
+    display: none;
+}
+
 .model {
     display: block;
     text-align: center;

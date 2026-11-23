@@ -28,15 +28,20 @@ document.addEventListener('click', (e) => {
 
 // Changing active tabs
 const tabs = document.querySelector('.vehicle-types')
+const panels = document.querySelectorAll('.model-panel')
+
 tabs.addEventListener('click', e => {
-  const clicked = e.target.closest('.vehicle-type')
+  const clicked = e.target.closest('.vehicle-type[data-category]')
   if (!clicked) return
 
   const activeTab = tabs.querySelector('.vehicle-type--active')
-
   if (activeTab) {
     activeTab.classList.remove('vehicle-type--active')
   }
-
   clicked.classList.add('vehicle-type--active')
+
+  const category = clicked.dataset.category
+  panels.forEach(panel => {
+    panel.hidden = panel.dataset.category !== category
+  })
 })

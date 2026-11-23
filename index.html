@@ -59,58 +59,200 @@
         </div>
 
         <div class="vehicle-types">
-          <span class="vehicle-type vehicle-type--active">Limousine</span>
-          <span class="vehicle-type">SUV</span>
-          <span class="vehicle-type">Coupe</span>
-          <span class="vehicle-type">Cabriolet</span>
+          <span
+            class="vehicle-type vehicle-type--active"
+            data-category="limousine"
+            >Limousine</span
+          >
+          <span class="vehicle-type" data-category="suv">SUV</span>
+          <span class="vehicle-type" data-category="coupe">Coupe</span>
+          <span class="vehicle-type" data-category="cabriolet">Cabriolet</span>
         </div>
 
-        <div class="model-content grid--3-cols">
-          <div class="model">
-            <img
-              class="model-img"
-              src="assets/c-model.png"
-              alt="C class model"
-            />
-            <div class="model-info">
-              <h2 class="model-title">C-Class</h2>
-              <p class="model-price">From 48,636€</p>
-              <a href="#" class="model-link">Learn More</a>
+        <div class="model-content">
+          <div class="model-panel grid--3-cols" data-category="limousine">
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/c-model.png"
+                alt="C class model"
+              />
+              <div class="model-info">
+                <h2 class="model-title">C-Class</h2>
+                <p class="model-price">From 48,636€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
             </div>
-            <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/e-model.png"
+                alt="E class model"
+              />
+              <div class="model-info">
+                <h2 class="model-title">E-Class</h2>
+                <p class="model-price">From 62,880€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/s-model.png"
+                alt="S class model"
+              />
+              <div class="model-info">
+                <h2 class="model-title">S-Class</h2>
+                <p class="model-price">From 124,831€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
           </div>
-          <div class="model">
-            <img
-              class="model-img"
-              src="assets/e-model.png"
-              alt="E class model"
-            />
-            <div class="model-info">
-              <h2 class="model-title">E-Class</h2>
-              <p class="model-price">From 67,320€</p>
-              <a href="#" class="model-link">Learn More</a>
+          <div class="model-panel grid--3-cols" data-category="suv" hidden>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/glc-model.png"
+                alt="Mercedes-Benz GLC"
+              />
+              <div class="model-info">
+                <h2 class="model-title">GLC</h2>
+                <p class="model-price">From 63,101€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
             </div>
-            <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/gle-model.png"
+                alt="Mercedes-Benz GLE"
+              />
+              <div class="model-info">
+                <h2 class="model-title">GLE</h2>
+                <p class="model-price">From 99,695€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/gls-model.png"
+                alt="Mercedes-Benz GLS"
+              />
+              <div class="model-info">
+                <h2 class="model-title">GLS</h2>
+                <p class="model-price">From 121,744€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
           </div>
-          <div class="model">
-            <img
-              class="model-img"
-              src="assets/s-model.png"
-              alt="S class model"
-            />
-            <div class="model-info">
-              <h2 class="model-title">S-Class</h2>
-              <p class="model-price">From 56,800€</p>
-              <a href="#" class="model-link">Learn More</a>
+          <div class="model-panel grid--3-cols" data-category="coupe" hidden>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/cla-model.png"
+                alt="Mercedes-Benz CLA Coupé"
+              />
+              <div class="model-info">
+                <h2 class="model-title">CLA Coupé</h2>
+                <p class="model-price">From 44,090€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
             </div>
-            <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/cle-model.png"
+                alt="Mercedes-Benz CLE Coupé"
+              />
+              <div class="model-info">
+                <h2 class="model-title">CLE Coupé</h2>
+                <p class="model-price">From 59,940€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/amg-gt-model.png"
+                alt="Mercedes-AMG GT Coupé"
+              />
+              <div class="model-info">
+                <h2 class="model-title">Mercedes-AMG GT Coupé</h2>
+                <p class="model-price">From 126,720€</p>
+                <a href="#" class="model-link">Learn More</a>
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
+          </div>
+          <div
+            class="model-panel grid--3-cols"
+            data-category="cabriolet"
+            hidden
+          >
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/cle-cabriolet.png"
+                alt="Mercedes-Benz CLE Cabriolet"
+              />
+              <div class="model-info">
+                <h2 class="model-title">CLE Cabriolet</h2>
+                <p class="model-price">From 67,884€</p>
+                <a
+                  href="https://www.mercedes-benz.rs/models/cle-cabriolet-a236-806-2/"
+                  class="model-link"
+                  >Learn More</a
+                >
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/amg-sl-roadster.png"
+                alt="Mercedes-AMG SL Roadster"
+              />
+              <div class="model-info">
+                <h2 class="model-title">Mercedes-AMG SL Roadster</h2>
+                <p class="model-price">From 139,320€</p>
+                <a
+                  href="https://www.mercedes-benz.rs/models/sl-roadster-r232-806-2/"
+                  class="model-link"
+                  >Learn More</a
+                >
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
+            <div class="model">
+              <img
+                class="model-img"
+                src="assets/s-class-cabriolet.png"
+                alt="Mercedes-Benz S-Class Cabriolet"
+              />
+              <div class="model-info">
+                <h2 class="model-title">S-Class Cabriolet</h2>
+                <p class="model-price">98,000€</p>
+                <a
+                  href="https://www.polovniautomobili.com/auto-oglasi/30768312/mercedes-benz-s-63-amg"
+                  class="model-link"
+                  >Learn More</a
+                >
+              </div>
+              <a href="#cta" class="test-drive-btn">Schedule a test drive</a>
+            </div>
           </div>
         </div>
         <div class="dots">
           <button class="dot dot--fill">&nbsp;</button>
-          <button class="dot">&nbsp;</button>
-          <button class="dot">&nbsp;</button>
-          <button class="dot">&nbsp;</button>
           <button class="dot">&nbsp;</button>
           <button class="dot">&nbsp;</button>
         </div>
