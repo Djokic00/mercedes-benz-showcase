@@ -3,11 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 2.4rem 4.8rem;
-    background-color: #000;
-    position: fixed;
+    background-color: var(--color-primary);
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     z-index: 100;
 }
 
@@ -25,20 +23,14 @@
 .main-nav-link:link,
 .main-nav-link:visited {
     display: inline-block;
-    color: #bbb;
+    color: var(--color-gray-200);
     font-weight: 500;
     text-decoration: none;
     font-size: 2.4rem;
 }
 
 .main-nav-link:hover {
-    color: #fff;
-}
-
-#models,
-#old-timers,
-#cta {
-    scroll-margin-top: 9rem;
+    color: var(--color-white);
 }
 
 /*********************/
@@ -58,7 +50,7 @@
 .hero-text {
     max-width: 70rem;
     padding: 9.6rem 2.4rem;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .hero-description {
@@ -85,7 +77,7 @@
     justify-content: center;
     font-size: 3rem;
     margin: 0 auto 6.4rem auto;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-gray-100);
     border-radius: 5rem;
     width: fit-content;
     overflow: hidden;
@@ -94,10 +86,10 @@
 .vehicle-type {
     padding: 1.2rem 3.2rem;
     cursor: pointer;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid var(--color-gray-100);
     white-space: nowrap;
     transition: all 0.2s;
-    color: #666;
+    color: var(--color-gray-500);
 }
 
 .vehicle-type:first-child {
@@ -111,8 +103,8 @@
 
 .vehicle-type:hover,
 .vehicle-type--active {
-    background: #333;
-    color: #fff;
+    background: var(--color-gray-800);
+    color: var(--color-white);
 }
 
 .vehicle-type:hover,
@@ -131,14 +123,14 @@
 .model {
     display: block;
     text-align: center;
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2.4rem 4.8rem var(--color-shadow);
     overflow: hidden;
     transition: all 0.4s;
 }
 
 .model:hover {
     transform: translateY(-1.2rem);
-    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 3.2rem 6.4rem var(--color-shadow-light);
 }
 
 .model-img {
@@ -164,18 +156,18 @@
 .model-link {
     font-size: 1.8rem;
     text-decoration: none;
-    color: #278cff;
+    color: var(--color-accent);
 }
 
 .test-drive-btn {
     display: inline-block;
     margin: 1.2rem auto;
-    background: #fff;
-    color: #666;
+    background: var(--color-white);
+    color: var(--color-gray-500);
     font-size: 2rem;
     font-weight: 600;
     padding: 1.2rem 2.4rem;
-    border: 2px solid #ddd;
+    border: 2px solid var(--color-gray-100);
     border-radius: 2rem;
     text-decoration: none;
 
@@ -201,15 +193,15 @@
 .dot {
     height: 1.8rem;
     width: 1.8rem;
-    background-color: #999;
-    border: 2px solid #999;
+    background-color: var(--color-gray-300);
+    border: 2px solid var(--color-gray-300);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .dot--fill {
-    background: #333;
-    border-color: #333;
+    background: var(--color-gray-800);
+    border-color: var(--color-gray-800);
 }
 
 /*********************/
@@ -230,7 +222,7 @@
 .old-timers-text p {
     font-size: 2.4rem;
     line-height: 1.6;
-    color: #666;
+    color: var(--color-gray-500);
 }
 
 .old-timers-stats {
@@ -246,7 +238,7 @@
 
 .old-timers-stat-item p {
     font-size: 1.6rem;
-    color: #666;
+    color: var(--color-gray-500);
 }
 
 .old-timers-gallery {
@@ -275,7 +267,7 @@
 /*********************/
 
 .section-cta {
-    background: #f7f7f7;
+    background: var(--color-gray-50);
     padding: 9.6rem 0;
 }
 
@@ -286,19 +278,19 @@
 .cta {
     display: grid;
     grid-template-columns: minmax(28rem, 2fr) 1fr;
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2.4rem 4.8rem var(--color-shadow-strong);
     border-radius: 11px;
     background: linear-gradient(
             to right bottom,
-            #777,
-            #555
+            var(--color-gray-400),
+            var(--color-gray-600)
     );
     overflow: hidden;
 }
 
 .cta-text-box {
     padding: 4.8rem 6.4rem 4.8rem 6.4rem;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .cta .heading-secondary {
@@ -333,32 +325,32 @@
     font-family: inherit;
     color: inherit;
     border: none;
-    background-color: #777;
+    background-color: var(--color-gray-400);
     border-radius: 9px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px var(--color-shadow);
 }
 
 .cta-form input::placeholder {
-    color: #aaa;
+    color: var(--color-gray-250);
 }
 
 .cta *:focus {
     outline: none;
-    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+    box-shadow: 0 0 0 0.8rem var(--color-focus-ring);
 }
 
 .cta-img-box {
     background-image: linear-gradient(
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.65)
+            var(--color-image-overlay),
+            var(--color-image-overlay-strong)
     ), url("../assets/sign-up-4.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .cta .btn-full {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--color-gray-800);
+    color: var(--color-white);
 }
 
 /*********************/
@@ -367,8 +359,8 @@
 
 .section-footer {
     padding: 9.6rem 0;
-    background-color: #000;
-    color: #bbb
+    background-color: var(--color-primary);
+    color: var(--color-gray-200)
 }
 
 .footer .container {
@@ -436,6 +428,6 @@
 
 .footer-link:hover,
 .footer-link:active {
-    color: #fff;
+    color: var(--color-white);
 }
 

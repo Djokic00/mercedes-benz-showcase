@@ -4,6 +4,17 @@ const currentYear = new Date().getFullYear()
 yearEl.textContent = currentYear
 
 
+// Keep scroll targets below the sticky header at every viewport size.
+const header = document.querySelector('.header')
+
+function updateHeaderHeight() {
+  const height = header.getBoundingClientRect().height
+  document.documentElement.style.setProperty('--header-height', `${height}px`)
+}
+
+updateHeaderHeight()
+new ResizeObserver(updateHeaderHeight).observe(header, { box: 'border-box' })
+
 // Smooth scrolling animation
 document.addEventListener('click', (e) => {
   const link = e.target.closest('a[href^="#"]')
