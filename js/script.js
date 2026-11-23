@@ -3,6 +3,7 @@ const yearEl = document.querySelector('.year')
 const currentYear = new Date().getFullYear()
 yearEl.textContent = currentYear
 
+
 // Smooth scrolling animation
 document.addEventListener('click', (e) => {
   const link = e.target.closest('a[href^="#"]')
