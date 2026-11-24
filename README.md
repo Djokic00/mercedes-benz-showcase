@@ -14,7 +14,7 @@ JavaScript.
 
 ## 🌍 Live Demo
 
-👉 *(add link here if you deploy it later)*
+[View the live Mercedes-Benz showcase](https://djokic00.github.io/mercedes-benz-showcase/)
 
 ---
 
